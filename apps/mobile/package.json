@@ -1,0 +1,48 @@
+{
+  "name": "@native-nest/mobile",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "scripts": {
+    "dev": "expo start",
+    "start": "expo start --tunnel",
+    "android": "expo start --tunnel --android",
+    "ios": "expo start --tunnel --ios",
+    "web": "expo start --tunnel --web"
+  },
+  "dependencies": {
+    "@expo/html-elements": "^0.12.5",
+    "@gluestack-ui/core": "^3.0.12",
+    "@gluestack-ui/utils": "^3.0.15",
+    "@legendapp/motion": "^2.5.3",
+    "expo": "~54.0.31",
+    "expo-constants": "^18.0.13",
+    "expo-linking": "^8.0.11",
+    "expo-router": "~6.0.21",
+    "expo-status-bar": "~3.0.9",
+    "expo-video": "^3.0.15",
+    "lucide-react-native": "^0.562.0",
+    "nativewind": "^4.2.1",
+    "react": "19.1.0",
+    "react-aria": "^3.45.0",
+    "react-dom": "19.1.0",
+    "react-native": "0.81.5",
+    "react-native-css-interop": "^0.2.1",
+    "react-native-reanimated": "~4.1.0",
+    "react-native-safe-area-context": "^5.6.2",
+    "react-native-screens": "^4.19.0",
+    "react-native-svg": "^15.15.1",
+    "react-native-web": "~0.19.13",
+    "react-native-worklets": "^0.5.2",
+    "react-stately": "^3.43.0",
+    "tailwind-variants": "^0.1.20"
+  },
+  "devDependencies": {
+    "@types/react": "~19.1.0",
+    "babel-plugin-module-resolver": "^5.0.2",
+    "babel-preset-expo": "^54.0.9",
+    "prettier-plugin-tailwindcss": "^0.5.14",
+    "tailwindcss": "^3.4.19",
+    "typescript": "~5.9.2"
+  },
+  "private": true
+}

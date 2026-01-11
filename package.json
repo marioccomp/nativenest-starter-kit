@@ -1,0 +1,24 @@
+{
+    "name": "native-nest",
+    "private": true,
+    "packageManager": "pnpm@9.0.0",
+    "scripts": {
+        "infra:up": "docker compose up -d",
+        "infra:down": "docker compose down",
+        "db:generate": "pnpm run --filter @native-nest/database db:generate",
+        "db:push": "pnpm run --filter @native-nest/database db:push",
+        "db:migrate": "pnpm run --filter @native-nest/database db:migrate",
+        "db:reset": "pnpm run --filter @native-nest/database db:reset",
+        "dev": "pnpm infra:up && turbo run dev",
+        "dev:full": "pnpm infra:up && pnpm db:migrate && pnpm dev",
+        "rebuild": "pnpm install && pnpm build",
+        "build": "turbo run build",
+        "lint": "turbo run lint",
+        "stop": "fuser -k 3000/tcp || true",
+        "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    },
+    "devDependencies": {
+        "turbo": "latest",
+        "prettier": "latest"
+    }
+}
